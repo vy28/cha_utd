@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Health Advocate</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Domine', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-blue-300 to-sky-100">
+
+    <!-- Floating Navbar -->
+    <nav class="bg-white shadow-sm p-4 fixed w-[90%] top-6 left-1/2 transform -translate-x-1/2 flex justify-between items-center z-50 rounded-xl">
+        <div class="text-2xl font-bold ml-4">CHA</div>
+        <div class="hidden md:flex space-x-4 sm:space-x-6 md:space-x-8">
+            <a href="index.html" class="text-gray-900 text-base sm:text-lg md:text-xl font-semibold hover:text-black">Home</a>
+            <a href="about.html" class="text-gray-500 text-base sm:text-lg md:text-xl hover:text-black">About</a>
+            <a href="#" class="text-gray-500 text-base sm:text-lg md:text-xl hover:text-black">Calendar</a>
+            <a href="contact.html" class="text-gray-500 text-base sm:text-lg md:text-xl hover:text-black">Contact</a>
+        </div>
+        <button class="bg-cyan-950 text-white px-4 sm:px-6 py-2 hover:bg-cyan-800 rounded-full text-base sm:text-lg md:text-xl mr-2 hidden md:block">Join Us</button>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm rounded-xl fixed top-20 left-1/2 transform -translate-x-1/2 w-[90%] z-40">
+        <ul class="flex flex-col items-center space-y-4 p-4">
+            <li><a href="#" class="text-gray-900 text-lg font-semibold hover:text-black">Home</a></li>
+            <li><a href="about.html" class="text-gray-500 text-lg hover:text-black">About</a></li>
+            <li><a href="#" class="text-gray-500 text-lg hover:text-black">Calendar</a></li>
+            <li><a href="contact.html" class="text-gray-500 text-lg hover:text-black">Contact</a></li>
+            <li><button class="bg-cyan-950 text-white px-6 py-2 hover:bg-cyan-800 rounded-full text-lg">Join Us</button></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="text-center mt-52 px-4">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-semibold text-gray-800 max-w-4xl mx-auto">We Are The Community Health Advocate</h1>
+        <p class="text-2xl sm:text-3xl md:text-4xl mt-8">@ UTD</p>
+    </section>
+
+    <!-- Editorials Section -->
+    <section class="mt-28 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        <h2 class="text-center text-2xl sm:text-3xl md:text-4xl mb-8 underline">Editorials</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Editorial 1 -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden p-4 sm:p-6">
+                <div class="rounded-lg overflow-hidden mb-4">
+                    <img src="https://via.placeholder.com/400x200" alt="Editorial Image" class="w-full h-48 object-cover">
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">this is the coolest title of them all because its cool</h3>
+                    <p class="text-sm sm:text-lg text-gray-600">JUN 1, 2024</p>
+                </div>
+            </div>
+            <!-- Editorial 2 -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden p-4 sm:p-6">
+                <div class="rounded-lg overflow-hidden mb-4">
+                    <img src="https://via.placeholder.com/400x200" alt="Editorial Image" class="w-full h-48 object-cover">
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">this is the coolest title of them all because its cool</h3>
+                    <p class="text-sm sm:text-lg text-gray-600">JUN 1, 2024</p>
+                </div>
+            </div>
+            <!-- Editorial 3 -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden p-4 sm:p-6">
+                <div class="rounded-lg overflow-hidden mb-4">
+                    <img src="https://via.placeholder.com/400x200" alt="Editorial Image" class="w-full h-48 object-cover">
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">this is the coolest title of them all because its cool</h3>
+                    <p class="text-sm sm:text-lg text-gray-600">JUN 1, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script to handle the mobile menu toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
